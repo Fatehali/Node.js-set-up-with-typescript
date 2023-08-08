@@ -1,15 +1,16 @@
 import first, {} from './first.js';
 
 export enum Hello {
-    HIGH,
+    HIGH=5,
     LOW,
-    MEDIUM,
+    MEDIUM=7,
 }
 
-(Hello[1] === "LOW")
+console.log(Hello[1] === "LOW")
 
 console.log(Hello[1])
 console.log(first());
+console.log("new update");
 
 export let newFunc = (name: string) => ({ name });
 
